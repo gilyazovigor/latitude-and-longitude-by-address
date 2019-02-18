@@ -28,13 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_start = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_open_xlsx = new System.Windows.Forms.Button();
+            this.button_save_xlsx = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(155, 77);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // button_start
+            // 
+            this.button_start.Location = new System.Drawing.Point(3, 62);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(146, 35);
+            this.button_start.TabIndex = 1;
+            this.button_start.Text = "Пуск";
+            this.button_start.UseVisualStyleBackColor = true;
+            this.button_start.Click += new System.EventHandler(this.button_start_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(155, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Обработано строк:";
+            // 
+            // button_open_xlsx
+            // 
+            this.button_open_xlsx.Location = new System.Drawing.Point(2, 3);
+            this.button_open_xlsx.Name = "button_open_xlsx";
+            this.button_open_xlsx.Size = new System.Drawing.Size(63, 39);
+            this.button_open_xlsx.TabIndex = 3;
+            this.button_open_xlsx.Text = "выбрать excel-файл";
+            this.button_open_xlsx.UseVisualStyleBackColor = true;
+            this.button_open_xlsx.Click += new System.EventHandler(this.button_open_xlsx_Click);
+            // 
+            // button_save_xlsx
+            // 
+            this.button_save_xlsx.Location = new System.Drawing.Point(84, 3);
+            this.button_save_xlsx.Name = "button_save_xlsx";
+            this.button_save_xlsx.Size = new System.Drawing.Size(174, 39);
+            this.button_save_xlsx.TabIndex = 4;
+            this.button_save_xlsx.Text = "выбрать путь для сохранения нового excel-файла";
+            this.button_save_xlsx.UseVisualStyleBackColor = true;
+            this.button_save_xlsx.Click += new System.EventHandler(this.button_save_xlsx_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(261, 104);
+            this.Controls.Add(this.button_save_xlsx);
+            this.Controls.Add(this.button_open_xlsx);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button_start);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Form1";
+            this.Text = "Долгота и широта по адресу";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_open_xlsx;
+        private System.Windows.Forms.Button button_save_xlsx;
     }
 }
 
