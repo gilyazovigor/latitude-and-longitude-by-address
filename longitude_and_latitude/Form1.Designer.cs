@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_open_xlsx = new System.Windows.Forms.Button();
             this.button_save_xlsx = new System.Windows.Forms.Button();
+            this.button_year_by_address = new System.Windows.Forms.Button();
+            this.textBox_year = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -48,7 +50,7 @@
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(146, 35);
             this.button_start.TabIndex = 1;
-            this.button_start.Text = "Пуск";
+            this.button_start.Text = "Пуск широта и долгота";
             this.button_start.UseVisualStyleBackColor = true;
             this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
@@ -81,18 +83,37 @@
             this.button_save_xlsx.UseVisualStyleBackColor = true;
             this.button_save_xlsx.Click += new System.EventHandler(this.button_save_xlsx_Click);
             // 
+            // button_year_by_address
+            // 
+            this.button_year_by_address.Location = new System.Drawing.Point(3, 103);
+            this.button_year_by_address.Name = "button_year_by_address";
+            this.button_year_by_address.Size = new System.Drawing.Size(147, 37);
+            this.button_year_by_address.TabIndex = 5;
+            this.button_year_by_address.Text = "Год по адресу";
+            this.button_year_by_address.UseVisualStyleBackColor = true;
+            this.button_year_by_address.Click += new System.EventHandler(this.button_year_by_address_Click);
+            // 
+            // textBox_year
+            // 
+            this.textBox_year.Location = new System.Drawing.Point(155, 115);
+            this.textBox_year.Name = "textBox_year";
+            this.textBox_year.Size = new System.Drawing.Size(100, 20);
+            this.textBox_year.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 104);
+            this.ClientSize = new System.Drawing.Size(261, 147);
+            this.Controls.Add(this.textBox_year);
+            this.Controls.Add(this.button_year_by_address);
             this.Controls.Add(this.button_save_xlsx);
             this.Controls.Add(this.button_open_xlsx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Долгота и широта по адресу";
+            this.Text = "Шир и долг по адресу";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +126,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_open_xlsx;
         private System.Windows.Forms.Button button_save_xlsx;
+        private System.Windows.Forms.Button button_year_by_address;
+        private System.Windows.Forms.TextBox textBox_year;
     }
 }
 
