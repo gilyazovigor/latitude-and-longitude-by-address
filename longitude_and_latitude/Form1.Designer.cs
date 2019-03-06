@@ -85,6 +85,7 @@
             // 
             // button_year_by_address
             // 
+            this.button_year_by_address.Enabled = false;
             this.button_year_by_address.Location = new System.Drawing.Point(3, 103);
             this.button_year_by_address.Name = "button_year_by_address";
             this.button_year_by_address.Size = new System.Drawing.Size(147, 37);
@@ -95,6 +96,7 @@
             // 
             // textBox_year
             // 
+            this.textBox_year.Enabled = false;
             this.textBox_year.Location = new System.Drawing.Point(155, 115);
             this.textBox_year.Name = "textBox_year";
             this.textBox_year.Size = new System.Drawing.Size(100, 20);

@@ -140,7 +140,7 @@ namespace longitude_and_latitude
 
             //сколько строк дано
             int data_i = 2;
-            while (ws.Cells[data_i, 1].Value2 != null)
+            while (ws.Cells[data_i, 21].Value2 != null)
             { data_i++; }
             data_i -= 2;
 
@@ -164,7 +164,7 @@ namespace longitude_and_latitude
 
             //сбор данных
                                 //data_i + 1
-            for (int i = 2; i <= 10; i++)
+            for (int i = 2; i <= data_i + 1; i++)
             {
                 //button_element_search = Browser.FindElement(By.ClassName("ymaps-2-1-72-searchbox"));
                 //button_element_search.Click();
